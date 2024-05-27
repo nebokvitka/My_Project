@@ -1,0 +1,132 @@
+$main-color: rgb(81, 167, 167);
+$text: rgb(228, 224, 224);
+$shadow: rgb(24, 117, 117);
+$white: #ffffff;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Tahoma";
+  font-weight: 400;
+  background-image: url("../../Images/background.jpg");
+  background-size: cover;
+  text-align: justify;
+  margin: 0;
+}
+
+.head {
+  overflow: hidden;
+  padding: 20px 10px;
+  background-color: $main-color;
+}
+
+.articles {
+  margin-left: 45px;
+  float: left;
+  padding: 15px;
+}
+
+.headerlink {
+  color: $white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0 20px;
+  float: left;
+}
+.nav {
+  padding: 25px;
+  float: right;
+}
+@media screen and (max-width: 860px) {
+  .articles {
+    float: none;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .headerlink {
+    float: none;
+    display: block;
+    padding: 10px 20px;
+  }
+
+  .nav {
+    float: none;
+  }
+}
+
+.contain {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  width: 90%;
+  border-color: $shadow;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 5px;
+  background-color: $text;
+}
+
+.name-article {
+  margin: 20px;
+}
+
+.content-article {
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-color: $shadow;
+}
+
+.text-article {
+  margin: 20px;
+}
+
+.dates {
+  @extend .name-article;
+}
+
+.row1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.row2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.date {
+  margin: 5px;
+}
+
+.links-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-article {
+  background-color: $main-color;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.edit-article:hover {
+  background-color: $shadow;
+  color: $text;
+}

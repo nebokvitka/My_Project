@@ -1,0 +1,96 @@
+$main-color: rgb(81, 167, 167);
+$text: rgb(228, 224, 224);
+$text-background: rgb(212, 212, 198);
+$shadow: rgb(24, 117, 117);
+$white: #ffffff;
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  padding-top: 25px;
+  background-image: url("../../Images/background.jpg");
+  font-family: "Tahoma";
+  background-size: cover;
+  margin-bottom: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+@mixin image($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+  width: 30%;
+}
+
+.first-image {
+  @include image(20px, auto);
+}
+
+.second-image {
+  @include image(auto, 20px);
+}
+
+.title {
+  font-size: 5.6vw;
+  background-color: $main-color;
+  color: $white;
+  padding: 2% 8%;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  background-color: $main-color;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 25px;
+  margin: 30px 30px;
+}
+
+.link:hover {
+  background-color: $shadow;
+  color: $text;
+}
+
+.about {
+  padding-top: 5px;
+  background-color: $text-background;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.container-width {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-heading {
+  font-size: 48px;
+  text-align: center;
+  margin: 25px;
+}
+
+.information {
+  font-size: 24px;
+  text-align: justify;
+  width: 100%;
+  color: black;
+  visibility: visible;
+}

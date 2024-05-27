@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../../Images/background.jpg");
+  background-size: cover;
+  font-family: "Tahoma";
+  margin: 0;
+}
+
+.head {
+  overflow: hidden;
+  padding: 20px 10px;
+  background-color: rgb(81, 167, 167);
+}
+
+.articles {
+  margin-left: 45px;
+  float: left;
+  padding: 15px;
+}
+
+.headerlink {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0 20px;
+  float: left;
+}
+
+.nav {
+  padding: 25px;
+  float: right;
+}
+
+@media screen and (max-width: 880px) {
+  .articles {
+    float: none;
+    display: block;
+  }
+  .headerlink {
+    float: none;
+    display: block;
+    padding: 20px 20px;
+    margin: 0px 15px;
+  }
+  .nav {
+    float: none;
+  }
+}
+.card {
+  display: block;
+  width: 400px;
+  margin: 40px auto;
+  background-color: rgb(228, 224, 224);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(81, 167, 167);
+  border-width: 5px;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+.line {
+  background-color: rgb(81, 167, 167);
+}
+
+.col {
+  margin-left: 20px;
+}
+
+.info {
+  margin-right: 20px;
+}
+
+.linksu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.but {
+  background-color: rgb(81, 167, 167);
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 25px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.but:hover {
+  background-color: rgb(24, 117, 117);
+  color: rgb(228, 224, 224);
+}
+
+/*# sourceMappingURL=user_profile.css.map */

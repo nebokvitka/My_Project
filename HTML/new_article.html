@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/new_article.css" />
+    <title>Article</title>
+  </head>
+  <body>
+    <header class="admin-header">
+      <h1>Articles</h1>
+      <nav>
+        <a href="articles.html">Home</a>
+        <a href="reviews.html">Review</a>
+        <a href="new_article.html">Add Article</a>
+        <a href="user_profile.html">User</a>
+        <a href="index.html" onclick="logout()">Log out</a>
+      </nav>
+    </header>
+    <header class="user-header">
+      <h1>Articles</h1>
+      <nav>
+        <a href="articles.html">Home</a>
+        <a href="new_article.html">Add Article</a>
+        <a href="user_profile.html">User</a>
+        <a href="index.html">Log out</a>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="name">
+        <input type="text" class="title" placeholder="Title of your article" />
+      </div>
+      <div class="content">
+        <textarea
+          rows="25"
+          cols="140"
+          placeholder="Content for your article"
+        ></textarea>
+      </div>
+    </div>
+    <button onclick="new_article()">Submit</button>
+    <script src="../JS/new_article.js"></script>
+  </body>
+</html>

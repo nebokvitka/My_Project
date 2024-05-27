@@ -1,0 +1,114 @@
+$main-color: rgb(81, 167, 167);
+$text: rgb(228, 224, 224);
+$shadow: rgb(24, 117, 117);
+$white: #ffffff;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../../Images/background.jpg");
+  background-size: cover;
+  font-family: "Tahoma";
+  margin: 0;
+}
+
+.head {
+  overflow: hidden;
+  padding: 20px 10px;
+  background-color: $main-color;
+}
+
+.articles {
+  margin-left: 45px;
+  float: left;
+  padding: 15px;
+}
+
+.headerlink {
+  color: $white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0 20px;
+  float: left;
+}
+.nav {
+  padding: 25px;
+  float: right;
+}
+@media screen and (max-width: 880px) {
+  .articles {
+    float: none;
+    display: block;
+  }
+
+  .headerlink {
+    float: none;
+    display: block;
+    padding: 20px 20px;
+    margin: 0px 15px;
+  }
+
+  .nav {
+    float: none;
+  }
+}
+
+.card {
+  display: block;
+  width: 400px;
+  margin: 40px auto;
+  background-color: $text;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: $main-color;
+  border-width: 5px;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+.line {
+  background-color: $main-color;
+}
+
+.col {
+  margin-left: 20px;
+}
+
+.info {
+  margin-right: 20px;
+}
+
+.linksu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.but {
+  background-color: $main-color;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 25px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.but:hover {
+  background-color: $shadow;
+  color: $text;
+}

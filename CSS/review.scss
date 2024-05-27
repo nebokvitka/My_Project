@@ -1,0 +1,137 @@
+$main-color: rgb(81, 167, 167);
+$text: rgb(228, 224, 224);
+$shadow: rgb(24, 117, 117);
+$white: #ffffff;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Tahoma";
+  font-weight: 400;
+  background-image: url("../Images/background.jpg");
+  background-size: cover;
+  text-align: justify;
+  margin: 0;
+}
+
+header {
+  overflow: hidden;
+  padding: 20px 10px;
+  background-color: $main-color;
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0 20px;
+    float: left;
+  }
+
+  h1 {
+    margin-left: 45px;
+    float: left;
+  }
+
+  select {
+    background-color: $main-color;
+    border-style: none;
+    color: $white;
+    font-size: 24px;
+    min-width: 50px;
+    cursor: pointer;
+    margin: 0 20px;
+    float: left;
+  }
+
+  nav {
+    padding: 25px;
+    float: right;
+  }
+}
+
+#dis {
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  header h1 {
+    float: none;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  header a {
+    float: none;
+    display: block;
+    padding: 10px 20px;
+  }
+
+  header select {
+    float: none;
+    display: block;
+    margin: 10px 20px;
+  }
+
+  header nav {
+    float: none;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  width: 90%;
+  border-color: $shadow;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 5px;
+  background-color: $text;
+
+  br {
+    display: block;
+    content: "";
+    margin: 10px 0;
+  }
+}
+
+.name {
+  margin-left: 20px;
+}
+
+.content {
+  border-top-style: solid;
+  border-color: $shadow;
+
+  p {
+    margin: 20px 20px;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    background-color: $main-color;
+    color: $white;
+    text-align: center;
+    padding: 14px 25px;
+    margin: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: $shadow;
+  }
+
+  button:hover {
+    background-color: $shadow;
+    color: $text;
+  }
+}

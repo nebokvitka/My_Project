@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../Images/background.jpg");
+  background-size: cover;
+  font-family: "Tahoma";
+}
+
+.center {
+  display: block;
+  width: 400px;
+  margin: 80px auto;
+  background: #ffffff;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #51a7a7;
+}
+
+.center h1 {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1.5px solid #a3a2a2;
+  color: #51a7a7;
+  font-weight: 700;
+}
+
+.center form {
+  padding: 0 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.text-field {
+  position: relative;
+  border-bottom: 2px solid #a3a2a2;
+  margin: 30px 0;
+}
+
+.text-field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.text-field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #a3a2a2;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.text-field span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #51a7a7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.text-field input:focus ~ label,
+.text-field input:valid ~ label {
+  top: -5px;
+  color: #51a7a7;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #51a7a7;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  border-color: #51a7a7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signup {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #a3a2a2;
+}
+
+.signup a {
+  color: #51a7a7;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: none;
+}
+
+p {
+  color: #ff7070;
+  margin-bottom: -10px;
+  margin-top: 20px;
+  margin-left: 5px;
+  visibility: hidden;
+}
+/*# sourceMappingURL=login.css.map */

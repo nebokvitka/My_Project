@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/edit_profile.css" />
+    <title>Edit</title>
+  </head>
+  <body>
+    <header class="admin-header">
+      <h1>Articles</h1>
+      <nav>
+        <a href="articles.html">Home</a>
+        <a href="reviews.html">Review</a>
+        <a href="new_article.html">Add Article</a>
+        <a href="user_profile.html">User</a>
+        <a href="index.html" onclick="logout()">Log out</a>
+      </nav>
+    </header>
+    <header class="user-header">
+      <h1>Articles</h1>
+      <nav>
+        <a href="articles.html">Home</a>
+        <a href="new_article.html">Add Article</a>
+        <a href="user_profile.html">User</a>
+        <a href="index.html">Log out</a>
+      </nav>
+    </header>
+    <div class="card">
+      <h2>User information</h2>
+      <form>
+        <div class="info">
+          <div class="form-group">
+            <p>Username or email taken</p>
+            <label>Username</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Username"
+              id="username"
+            />
+          </div>
+          <div class="form-group">
+            <label>First name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First name"
+              id="firstname"
+            />
+          </div>
+          <div class="form-group">
+            <label>Last name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last name"
+              id="lastname"
+            />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              id="email"
+            />
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input
+              type="tel"
+              class="form-control"
+              placeholder="Phone"
+              id="phone"
+            />
+          </div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <script src="../JS/edit_submit.js"></script>
+  </body>
+</html>
